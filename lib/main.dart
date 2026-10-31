@@ -13,14 +13,16 @@ class MainApp extends StatelessWidget {
     home: Scaffold(
   body: Center(
     child: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text('Hello World!'),
         Text('Bienvenue dans mon application Flutter'),
         Container(
-  margin: EdgeInsets.all(20),
-  padding: EdgeInsets.all(16),
+  margin: EdgeInsets.all(24),
+  padding: EdgeInsets.all(20),
   decoration: BoxDecoration(
-    color: Colors.orange,
+    color: Colors.deepOrange,
     borderRadius: BorderRadius.circular(20),
   ),
   child: Text(
@@ -33,7 +35,7 @@ class MainApp extends StatelessWidget {
       ),
       Text('Voici mon premier Container personnalisé'),
       Stack(
-  alignment: Alignment.topRight,
+  alignment: Alignment.center,
   children: [
     Container(
       width: 200,
